@@ -1,0 +1,4 @@
+## Background
+This blog site was developed as a prefinal exam project to demonstrate full-stack web development skills using Node.js, Express, MongoDB Atlas, and EJS. 
+The website allows users to create, read, update, and delete (CRUD) blog posts, with data stored in a MongoDB Atlas cloud database. Key features include a responsive user interface with server-side rendered EJS templates, a search function to filter posts, a customizable sidebar with a profile image, and photo upload support via image URLs. 
+The frontend is styled with modern CSS, incorporating a glassmorphism effect for forms and a card-based layout for posts, ensuring a visually appealing and mobile-friendly experience. The project showcases the integration of backend, frontend, and database technologies to build a functional and user-friendly blog platform.
