@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 /* ====================== */
@@ -32,14 +32,14 @@ body {
 /* ====================== */
 .container {
   width: 100%;
-  height: 110vh; /* Full viewport height */
+  height: 110vh; 
   flex: 1;
   display: flex;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center; 
   background-image: url('allblogspic.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* Fix the background image */
+  background-attachment: fixed; 
   position: fixed;
   top: 0;
   left: 0;
@@ -48,26 +48,26 @@ body {
 .content {
   position: relative;
   width: 100%;
-  max-width: 800px; /* Add a max-width to prevent overly wide content on large screens */
+  max-width: 800px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children (like search bar, blog cards) */
+  align-items: center; 
   padding-left: 275px;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: 100vh; /* Full viewport height */
-  overflow-y: auto; /* Enable vertical scrolling for the content */
+  height: 100vh; 
+  overflow-y: auto; 
 }
 
 .about-content{
   font-size: 25px;
-  align-items: center; /* Center children (like search bar, blog cards) */
+  align-items: center;
   width: 100%;
-  max-width: 1000px; /* Add a max-width to prevent overly wide content on large screens */
-  padding-left: 870px; /* Slightly more padding to account for sidebar */
+  max-width: 1000px; 
+  padding-left: 870px; 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children (like search bar, blog cards) */
+  align-items: center; 
   background: rgba(255, 255, 255, 0.65);
   box-shadow: 0 8px 32px 0 rgba(8, 47, 81, 0.37);
   backdrop-filter: blur(10px);
@@ -79,13 +79,13 @@ body {
   position: relative;
 }
 
-
 .not-found {
   padding-left: 275px;
   padding-top: 400px;
   font-size: 80px;
   font-weight: 1000;
 }
+
 .content-wrapper {
   flex: 1;
   display: flex;
@@ -108,7 +108,6 @@ body {
 .about-content:hover {
   transform: translateY(-8px) scale(1.02);
 }
-
 
 /* ====================== */
 /*      NAVIGATION        */
@@ -150,14 +149,13 @@ h1{
 }
 
 .profile-image {
-  width: 200px; /* Adjust size as needed */
-  height: 200px; /* Same as width for a circle */
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures image fills the circle */
-  margin-bottom: 1.5rem; /* Space below the image */
-  border: 3px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
-  box-shadow: var(--shadow-sm); /* Light shadow for depth */
-  
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-bottom: 1.5rem; 
+  border: 3px solid rgba(255, 255, 255, 0.5); 
+  box-shadow: var(--shadow-sm); 
 }
 
 .sidebar p {
@@ -177,16 +175,15 @@ h1{
 .sidebar a {
   color: white;
   text-decoration: none;
-  display: flex; /* Use flex to align icon and text */
-  align-items: center; /* Vertically center icon and text */
-  gap: 10px; /* Space between icon and text */
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
   font-size: larger;
   font-weight: 1000;
 }
 
-/* Style for the icons */
 .sidebar a i {
-  font-size: 100px; /* Slightly larger icon size */
+  font-size: 100px; 
 }
 
 .sidebar li {
@@ -204,7 +201,7 @@ h1{
 
 .site-title {
   margin-bottom: 2rem;
-  text-align: center; /* Center the site title and description */
+  text-align: center; 
   font-weight: 1000;
 }
 
@@ -219,16 +216,16 @@ h1{
 .edit-blog {
   position: relative;
   width: 100%;
-  max-width: 800px; /* Match the max-width of other content areas */
+  max-width: 800px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the content */
-  padding-left: 300px; /* Account for the sidebar */
+  align-items: center;
+  padding-left: 300px;
   padding-right: 50px; 
   padding-top: 20px;
   padding-bottom: 20px;
-  height: 100vh; /* Full viewport height */
-  overflow-y: auto; /* Allow scrolling if content overflows */
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .edit-blog form {
@@ -239,16 +236,15 @@ h1{
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-right: none; /* Remove the right border */
-  border-left: 7px solid rgba(8, 47, 81, 0.37); /* Keep the thicker left border */
+  border-right: none;
+  border-left: 7px solid rgba(8, 47, 81, 0.37);
   width: 100%;
-  max-width: 100%; /* Ensure it doesn't exceed parent */
+  max-width: 100%;
   transition: var(--transition);
-  
 }
 
 .edit-blog form:hover {
-  transform: translateY(-8px) scale(1.02); /* Match hover effect from .blog-preview */
+  transform: translateY(-8px) scale(1.02);
   box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -257,7 +253,7 @@ h1{
   font-weight: 500;
   margin-bottom: 0.5rem;
   color: var(--text-dark);
-  font-size: 1.5rem; /* Larger for better readability */
+  font-size: 1.5rem;
 }
 
 .edit-blog input[type="text"],
@@ -267,14 +263,14 @@ h1{
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
-  margin-bottom: 1.5rem; /* Increased spacing between inputs */
+  margin-bottom: 1.5rem;
   transition: var(--transition);
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  box-sizing: border-box;
 }
 
 .edit-blog textarea {
-  height: 200px; /* Increased height for better usability */
-  resize: vertical; /* Allow vertical resizing only */
+  height: 200px;
+  resize: vertical;
 }
 
 .edit-blog input[type="text"]:focus,
@@ -293,7 +289,7 @@ h1{
   border: none;
   border-radius: 4px;
   font-weight: 500;
-  font-size: 1.2rem; /* Slightly larger for emphasis */
+  font-size: 1.2rem;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -306,8 +302,6 @@ h1{
 /* ====================== */
 /*      BLOG CARDS        */
 /* ====================== */
-
-/* Ensure blog previews maintain full width */
 .blog-preview {
   margin: 1.5rem 0;
   padding: 1.5rem;
@@ -317,10 +311,10 @@ h1{
   -webkit-backdrop-filter: blur(2px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: 100%; /* Ensure full width within parent */
-  max-width: 100%; /* Prevent exceeding parent */
+  width: 100%;
+  max-width: 100%;
   border-left: 7px solid rgba(8, 47, 81, 0.37);
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  box-sizing: border-box;
 }
 
 .blog-preview:hover {
@@ -350,7 +344,6 @@ h1{
   line-height: 1.7;
 }
 
-
 .blog-body {
   align-items: center;
   justify-items: center;
@@ -358,19 +351,18 @@ h1{
 }
 
 .blogs-container {
-  width: calc(100% - 16px); /* Account for scrollbar width (8px) with extra padding */
+  width: calc(100% - 16px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1px 8px; /* Add padding to the scrollable area, 8px on sides to account for scrollbar */
-  height: 60vh; /* Shortened height to reduce scrollbar length */
-  overflow-y: auto; /* Scroll only the blogs-container vertically */
-  overflow-x: hidden; /* Disable horizontal scrolling */
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #4a5568 #e0e0e0; /* Custom scrollbar colors */
+  padding: 1px 8px;
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #4a5568 #e0e0e0;
 }
 
-/* Custom scrollbar for Webkit browsers (Chrome, Safari) */
 .blogs-container::-webkit-scrollbar {
   width: 6px;
 }
@@ -401,11 +393,11 @@ h1{
   padding-right: 15px;
 }
 
-
 .about-content {
   justify-content: center;
   text-align: center;
 }
+
 /* ====================== */
 /*      BUTTONS           */
 /* ====================== */
@@ -468,9 +460,9 @@ textarea:focus {
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
-  width: 100%; /* Ensure the search form takes the full width */
-  max-width: 600px; /* Match the blog cards' max-width for consistency */
-  justify-content: center; /* Center the search bar and button */
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
 }
 
 .search-form button {
@@ -496,8 +488,8 @@ footer {
 /* ====================== */
 @media (max-width: 768px) {
   .content {
-    padding-left: 0; /* Remove left padding on smaller screens */
-    width: 98%; /* Reduce width for better fit */
+    padding-left: 0;
+    width: 98%;
   }
   
   .container {
@@ -521,8 +513,8 @@ footer {
   }
 
   .content {
-    padding-left: 0; /* Remove left padding on smaller screens */
-    width: 90%; /* Reduce width for better fit */
+    padding-left: 0;
+    width: 90%;
   }
   
   .container {
@@ -531,30 +523,30 @@ footer {
   }
   
   .header-section {
-    padding: 15px 0; /* Slightly less padding on smaller screens */
+    padding: 15px 0;
   }
   
   .blogs-container {
-    padding: 15px 8px; /* Consistent padding on smaller screens */
-    height: 40vh; /* Slightly shorter on smaller screens */
-    width: calc(100% - 16px); /* Maintain scrollbar space */
+    padding: 15px 8px;
+    height: 40vh;
+    width: calc(100% - 16px);
   }
 
   .edit-blog {
-    padding-left: 0; /* Remove left padding on smaller screens */
-    width: 90%; /* Reduce width for better fit */
+    padding-left: 0;
+    width: 90%;
   }
   
   .edit-blog form {
-    padding: 1.5rem; /* Slightly less padding on smaller screens */
+    padding: 1.5rem;
   }
   
   .edit-blog label {
-    font-size: 1.2rem; /* Slightly smaller on mobile */
+    font-size: 1.2rem;
   }
   
   .edit-blog button {
-    font-size: 1rem; /* Adjust button font size for mobile */
+    font-size: 1rem;
   }
 }
 
@@ -562,22 +554,22 @@ footer {
 .new-blog-form {
   margin: 5rem 20rem 10rem;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.55); /* Match glassmorphism effect from .blog-preview */
+  background: rgba(255, 255, 255, 0.55);
   box-shadow: 0 8px 32px 0 rgba(8, 47, 81, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-left: 7px solid rgba(8, 47, 81, 0.37); /* Consistent with .blog-preview */
+  border-left: 7px solid rgba(8, 47, 81, 0.37);
   width: 100%;
-  max-width: 800px; /* Increased from 600px to make the form wider */
+  max-width: 800px;
   transition: var(--transition);
   position: relative;
-  left: 150px; /* Shift away from the sidebar */
+  left: 150px;
 }
 
 .new-blog-form:hover {
-  transform: translateY(-8px) scale(1.02); /* Match hover effect from .blog-preview */
+  transform: translateY(-8px) scale(1.02);
   box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -585,7 +577,7 @@ footer {
   font-size: 35px;
   text-align: center;
   margin-bottom: 2rem;
-  padding-left: 0; /* Override the global h1 padding */
+  padding-left: 0;
 }
 
 .new-blog-form label {
@@ -597,13 +589,13 @@ footer {
 }
 
 .new-blog-form textarea, text {
-  height: 200px; /* Reasonable height for the textarea */
-  resize: vertical; /* Allow vertical resizing only */
+  height: 200px;
+  resize: vertical;
 }
 
 .new-blog-form button {
   margin-top: 1rem;
-  width: 100%; /* Full-width button for consistency */
+  width: 100%;
   font-size: 30px;
   height: 100px;
   border-radius: 25px;
@@ -612,9 +604,9 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .new-blog-form {
-    left: 0; /* Remove left shift on smaller screens */
+    left: 0;
     width: 90%;
-    max-width: 90%; /* Ensure it fits within viewport */
+    max-width: 90%;
     padding: 1.5rem;
   }
 }
