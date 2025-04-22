@@ -1,0 +1,40 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="container blog-detail">
+    <article class="blog-content">
+      <h1 class="blog-title"><%= blog.title %></h1>
+      
+      <% if (blog.createdAt) { %>
+        <p class="publish-date">
+          Posted on <%= blog.createdAt.toLocaleDateString() %>
+        </p>
+      <% } %>
+      
+      <div class="blog-body">
+        <%= blog.body %>
+      </div>
+      
+      <div class="blog-actions">
+        <a href="/blogs/<%= blog._id %>/edit" class="btn btn-edit">✏️ Edit</a>
+        <a class="btn btn-delete delete" data-doc="<%= blog._id %>">🗑️ Delete</a>
+      </div>
+    </article>
+  </div>
+
+  <script>
+    document.querySelector('.delete').addEventListener('click', (e) => {
+      e.preventDefault();
+      if (confirm('Delete this blog permanently?')) {
+        fetch(`/blogs/${e.target.dataset.doc}`, { method: 'DELETE' })
+          .then(res => res.json())
+          .then(data => window.location.href = data.redirect)
+          .catch(err => console.log(err));
+      }
+    });
+  </script>
+</body>
+</html>
